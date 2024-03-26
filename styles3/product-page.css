@@ -1,0 +1,120 @@
+body {
+    padding-top:  0px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.product-page {
+    padding: 20px;
+    display: flex;
+    margin-left: 15vw;
+    margin-top: 12vh;
+    width: 80vw;
+    height: 85vh;
+}
+.PRODUCT-INFO {
+
+    display: flex;
+    height: 80vh;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+h1 {
+    margin-top: 40px;
+    width: 550px;
+    font-weight: 700;
+}
+h2 {
+    color: grey;
+    font-weight: 100;
+}
+.flavors {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.buttons {
+    height: 120px;
+    width: 130px;
+    border-radius: 10px;
+    background-color: rgb(243, 240, 240);
+    font-size: 16px;
+    text-wrap: wrap;
+    border: none;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+.buttons:hover {
+    border: solid;
+    border-color: rgb(72, 187, 196);
+}
+.buttons:active {
+    border: solid;
+    border-color: rgb(72, 187, 196);
+    background-color: rgb(72, 187, 196);
+}
+.bottom-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.buy-button,
+.check-button {
+    background-color: rgb(72, 187, 196);
+    width: 270px;
+    height: 50px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: border 2s;
+}
+.check-button:active,
+.buy-button:active {
+    border: solid 3px rgb(243, 240, 240);
+}
+.check-button .tooltip {
+    position: absolute;
+    background-color:rgb(243, 240, 240);
+    color: rgb(102, 101, 101);
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+    font-family: roboto, arial;
+    color: red;
+}
+.check-button:active .tooltip {
+    opacity: 1;
+}
+@media all and (max-width: 700px) {
+    .sidebar {
+        display: none;
+    }
+    .footer {
+        justify-content: left;
+        width: 600px;
+        margin-top: 50px;
+    }
+    table {
+        margin-left: 0px;
+    }
+    .product-page {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100vh;
+    }
+ 
+}

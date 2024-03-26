@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.video-container {
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 65vh;
+    background-image: linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3));
+    margin-bottom: 50px;
+}
+.video {
+    position: absolute;
+    z-index: -1;
+}
+.main-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1 {   
+    z-index: 1;
+    color: azure;
+    margin-bottom: 20px;
+    font-size: 60px;
+    
+}
+
+h2 {
+
+    text-align: center;
+    width: 500px;
+    color:azure ;
+}
+.product-info-grid {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+.product-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 400px 1fr;
+    column-gap: 16px;
+    row-gap: 40px;
+    margin-left: 350px;
+    
+    
+}
+.container {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    flex-direction: column;
+    width: 280px;
+    background-color: rgb(243, 240, 240);
+    box-shadow: 2px 2px 10px rgb(134, 134, 134);
+}
+.image-product {
+    
+    border-radius:10px 10px 0px 0px;
+    width: 275px;
+    height: 200px;
+    border: 2px solid rgb(243, 240, 240);
+}
+.description {
+    display: flex;
+    flex-direction: column;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 0px 0px 10px 10px;
+    height: 200px;
+    width: 275px;
+    background-color: rgb(243, 240, 240); 
+}
+p {
+    margin-top: 20px;
+    font-family: Montserrat, arial;
+    font-weight: 500;
+    font-size: 10px;
+    color: rgb(145, 145, 145);
+    
+}
+h3 {
+    margin-top: 6px;
+    width: 270px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.para {
+    margin-top: 0;
+    font-family: Montserrat, arial;
+    font-weight: 500;
+    width: 200px;
+    font-size: 10px;
+    color: rgb(145, 145, 145);
+    line-height: 22px;
+    font-size: 12px;
+    margin-bottom: 0;
+}
+.prices {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+    margin-top: 20px;
+    
+}
+.higher-price {
+    font-size: 10px;
+    color: rgb(145, 145, 145);
+    text-decoration: line-through;
+
+}
+.cart-icon {
+width: 14px;
+margin-right: 10px;
+}
+.purchase-button {
+    position: relative;
+    margin-right: 10px;
+    font-size: 12px;
+    font-family: Montserrat, arial;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 125px;
+    height: 40px;
+    background-color: rgb(72, 187, 196);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+.purchase-button:active {
+    background-color: green;
+}
+
+.container:hover {
+    border: solid 2px rgb(72, 187, 196);
+}
+
+@media (min-width: 500px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+        row-gap: 40px;
+    }
+}
+@media (min-width: 461px) and (max-width: 749px) {
+    .product-grid {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 40px;
+    }
+    
+}
+@media (min-width: 751px) and (max-width: 999px) {
+    .product-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 40px;
+    }
+    
+}
+@media (min-width: 1000px) and (max-width: 1249px) {
+    .product-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        row-gap: 40px;
+    }
+    
+}
+@media (min-width: 1250px) and (max-width: 1499px) {
+    .product-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        row-gap: 40px;
+    }
+    
+}
+@media (min-width: 1500px) {
+    .product-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    
+}
+@media all and (max-width: 700px) {
+    .sidebar {
+        display: none;
+    }
+    .product-grid {
+        margin-left: 35px;
+    }
+    .footer {
+        justify-content: left;
+        width: 600px;
+    }
+    table {
+        margin-left: 0px;
+    }
+}

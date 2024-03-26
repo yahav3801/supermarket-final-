@@ -1,0 +1,40 @@
+.footer {
+     position: absolute;
+     right:0px;
+    display: flex;
+    background-color: rgb(212, 207, 207);
+    width: 85%;
+    height: 30vh;
+    justify-content: center;
+    border-radius: 10px 0 0 0 ;
+    box-shadow: 1px 1px 10px rgb(75, 75, 75);
+}
+table {
+    
+    width: 1000px;
+}
+tbody td {
+    text-align: center;
+  }
+  tbody td:hover {
+    text-decoration: underline;
+  }
+  a:link {
+    text-decoration: none;
+    color: none;
+  }
+  a:visited {
+    color: black;
+  }
+  @media all and (max-width: 700px) {
+    .sidebar {
+        display: none;
+    }
+    .product-grid {
+        margin-left: 35px;
+    }
+    .footer {
+      
+      width: 600px;
+  }
+}
